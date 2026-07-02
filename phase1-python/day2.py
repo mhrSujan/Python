@@ -72,3 +72,21 @@ if password == "password123":
     print("Access granted!")
 else:
     print("Access denied.")
+
+
+#Simple shopping cart calculator with discount
+item_name = input("Enter the item name: ")
+Price = float(input("Enter the Price of the item:"))
+Quantity = int(input("Enter the Quantity of the item:"))
+Total_cost = Price * Quantity
+
+if Total_cost > 100:
+    discount = Total_cost * 0.1
+    Total_cost -= discount
+    print("You received a discount of:", discount)
+    print("The total cost after discount is:", Total_cost)
+    print("The total cost of", Quantity, item_name, "is:", Total_cost)
+
+else:
+    print("No discount applied.")
+    print("The total cost of", Quantity, item_name, "is:", Total_cost)
